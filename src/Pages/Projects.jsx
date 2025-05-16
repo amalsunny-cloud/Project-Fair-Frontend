@@ -58,7 +58,7 @@ function Projects() {
 
 
       <Row className="container-fluid mt-5">
-        {allProjects?.length>0?allProjects.map(project=>(<Col sm={12} md={6} lg={4} >
+        {allProjects?.length>0?allProjects.map(project=>(<Col sm={12} md={6} lg={3} >
           <ProjectCard project={project}/>
         </Col>
         )):

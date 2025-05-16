@@ -76,18 +76,18 @@ function Auth({register}) {
   return (
     <>
       <div className="d-flex justify-content-center align-items-center">
-            <div className="w-75 container">
+            <div className="w-75 container" style={{marginTop:"30px"}}>
                 <Link to={'/'} style={{color:"blue",textDecoration:"none",fontWeight:"bolder"}}><i class="fa-solid fa-arrow-left me-2"></i>Back to Home</Link>
 
 
-                <div className="card shadow p-5">
+                <div className="card shadow p-5 mt-3">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <img src="https://cdni.iconscout.com/illustration/premium/thumb/login-3305943-2757111.png" alt="" width={"100%"} className='rounded-start'/>
                         </div>
                         <div className="col-lg-6">
-                            <div className="d-flex align-items-center flex-column">
-                            <h1 className='fw-bolder text-primary mt-5 pt-2'><i className='fa-solid fa-list-check me-2'></i>Project Fair</h1>
+                            <div className="d-flex align-items-center flex-column" style={{marginTop:"-40px"}}>
+                            <h1 className='fw-bolder text-primary'><i className='fa-solid fa-list-check me-2'></i>Project Fair</h1>
 
                                 <h5 className='text-primary fw-bolder text-center'>
                                     {
@@ -97,7 +97,7 @@ function Auth({register}) {
 
 
 
-                                <Form className='text-primary w-100'>
+                                <Form className='text-primary w-75 mt-3'>
                                     {
                                         isRegisterForm&&
                                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
