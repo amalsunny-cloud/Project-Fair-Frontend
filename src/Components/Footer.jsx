@@ -50,22 +50,22 @@ function Footer() {
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#!' className='text-reset' style={{textDecoration:"none"}}>
                   Angular
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#!' className='text-reset' style={{textDecoration:"none"}}>
                   React
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#!' className='text-reset' style={{textDecoration:"none"}}>
                   Vue
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#!' className='text-reset' style={{textDecoration:"none"}}>
                   Laravel
                 </a>
               </p>
@@ -74,22 +74,22 @@ function Footer() {
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#!' className='text-reset' style={{textDecoration:"none"}}>
                   Pricing
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#!' className='text-reset' style={{textDecoration:"none"}}>
                   Settings
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#!' className='text-reset' style={{textDecoration:"none"}}>
                   Orders
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#!' className='text-reset' style={{textDecoration:"none"}}>
                   Help
                 </a>
               </p>
@@ -118,7 +118,7 @@ function Footer() {
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2024 Copyright:
-        <a className='text-reset fw-bold' href=''>
+        <a className='text-reset fw-bold' style={{textDecoration:"none"}} href=''>
           projectfair.com
         </a>
       </div>

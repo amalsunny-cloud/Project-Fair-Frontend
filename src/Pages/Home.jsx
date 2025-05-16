@@ -58,21 +58,21 @@ const getHomeProjects=async()=>{
   return (
     <>
       <div className="container-fluid rounded bg-primary" style={{height:"90vh",width:"100%",paddingLeft:"90px"}}>
-        <Row className='align-items-center p-4'>
+        <Row className='align-items-center p-5'>
             <Col sm={12} md={6}>
                 <h1 style={{fontSize:"80px"}} className='fw-bolder text-light mt-5 pt-2'><i className='fa-solid fa-list-check me-2'></i>Project Fair</h1>
 
-                    <p className='text-light pt-5'>
+                    <p className='text-light pt-4'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facilis quaerat nihil adipisci cupiditate, eveniet dolore beatae nemo consequuntur laudantium?
                     </p>
 
                     {isLoggedIn?
                     <Link to={'/dashboard'} className='btn btn-warning'>Manage Your Projects</Link>:
-                    <Link to={'/login'} className='btn btn-warning'>Start to Explore</Link>
+                    <Link to={'/login'} className='btn btn-warning' style={{marginLeft:"210px",marginTop:"10px"}}>Start to Explore</Link>
 }
             </Col>
             <Col sm={12} md={6} style={{paddingLeft:"40px"}}>
-                <img src={titleImage} style={{marginTop:"80px"}} width={"400px"} alt="" />
+                <img src={titleImage} style={{marginTop:"80px",borderRadius:"20px"}} width={"400px"} alt="" />
             
             </Col>
         </Row>
@@ -101,7 +101,7 @@ const getHomeProjects=async()=>{
 
 
       <div className="text-center">
-        <p className='btn fw-bold' onClick={handleProjectsPage}>View more projects</p>
+        <p className='btn fw-bold' style={{textDecoration:"underline",marginTop:"25px"}} onClick={handleProjectsPage}>View more projects</p>
       </div>
 
       <ToastContainer theme="colored" autoClose={2000} position="top-center"/>
