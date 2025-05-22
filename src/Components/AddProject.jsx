@@ -103,7 +103,7 @@ function AddProject() {
 
   return (
     <>
-        <Button variant="dark" onClick={handleShow} className='me-2 rounded'>
+        <Button variant="dark" onClick={handleShow} className='me-2 mb-3 rounded'>
           Add-Project
       </Button>
 
@@ -167,10 +167,10 @@ function AddProject() {
             </div>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="danger" onClick={handleClose}>
             Cancel
           </Button>
-          <Button variant="dark" onClick={handleAddProject}>Upload</Button>
+          <Button variant="success" onClick={handleAddProject}>Upload</Button>
         </Modal.Footer>
       </Modal>
 

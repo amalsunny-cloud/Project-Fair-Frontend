@@ -69,9 +69,9 @@ function MyProjects() {
      
   return (
     <>
-      <div className="card shadow mt-5">
+      <div className="card shadow mt-3">
         <div className="container-fluid p-3">
-          <h1 className='fw-bolder text-dark'>My Projects</h1>
+          <span className='text-dark fs-5 fw-bold'>My Projects</span>
         </div>
 
         <div className="ms-auto">

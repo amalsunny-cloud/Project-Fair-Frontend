@@ -19,7 +19,7 @@ function Header({insideDashboard}) {
     <div>
         <Navbar className="bg-body-tertiary">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="">
             <Link to={'/'} style={{textDecoration:"none"}}>
                 <i className='fa-solid fa-list-check me-2'></i>
             </Link>

@@ -30,7 +30,6 @@ function Dashboard() {
           {/* my projects */}
             <Col sm={12} md={8}>
                 <h1 className='mt-3'>Welcome <span className='text-warning fw-bolder'>{username}</span></h1>
-
                 <MyProjects/>
             </Col>
 
