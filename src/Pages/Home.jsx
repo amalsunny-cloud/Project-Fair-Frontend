@@ -57,7 +57,7 @@ const getHomeProjects=async()=>{
   
   return (
     <>
-      <div className="container-fluid rounded bg-primary" style={{height:"90vh",width:"100%",paddingLeft:"90px"}}>
+      <div className="container-fluid bg-primary" style={{height:"90vh",width:"100%",paddingLeft:"90px"}}>
         <Row className='align-items-center p-5'>
             <Col sm={12} md={6}>
                 <h1 style={{fontSize:"80px"}} className='fw-bolder text-light mt-5 pt-2'><i className='fa-solid fa-list-check me-2'></i>Project Fair</h1>

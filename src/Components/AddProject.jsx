@@ -22,7 +22,6 @@ function AddProject() {
   }
 
 
-
   const handleShow = () => setShow(true);
   const [projectData,setProjectData] = useState({
     title:"",languages:"",overview:"",github:"",website:"",projectImage:""
@@ -46,12 +45,9 @@ function AddProject() {
     }
   },[projectData.projectImage])
 
-
   console.log(projectData);
   
   
-
-
   const handleAddProject=async()=>{
     const {title,languages,overview,github,website,projectImage} = projectData
     if(!title || !languages || !overview || !github || !website || !projectImage){
@@ -69,7 +65,6 @@ function AddProject() {
       reqBody.append("projectImage",projectImage)
 
       const token = sessionStorage.getItem("token")
-
 
       //reqHeader
       if(token){
@@ -103,7 +98,7 @@ function AddProject() {
 
   return (
     <>
-        <Button variant="dark" onClick={handleShow} className='me-2 mb-3 rounded'>
+        <Button variant="dark" onClick={handleShow} className='me-5 mb-3 rounded'>
           Add-Project
       </Button>
 

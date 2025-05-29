@@ -21,10 +21,6 @@ function ProjectCard({project}) {
       </Card.Body>
     </Card>
 
-
-
-
-
     <Modal
         show={show}
         onHide={handleClose}

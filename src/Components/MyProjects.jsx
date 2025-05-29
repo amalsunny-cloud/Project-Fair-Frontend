@@ -70,7 +70,7 @@ function MyProjects() {
   return (
     <>
       <div className="card shadow mt-3">
-        <div className="container-fluid p-3">
+        <div className="container-fluid px-4 mt-4">
           <span className='text-dark fs-5 fw-bold'>My Projects</span>
         </div>
 
