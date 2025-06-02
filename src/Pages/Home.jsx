@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
-// import titleImage from '../assets/images/pr-integrated-communications.gif'
+import mainImage from '../assets/project-fair-main.jpg'
 import ProjectCard from '../Components/ProjectCard'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { getHomeProjectAPI } from '../Services/allAPI'
-// project-fair\src\assets\Images\pr-integrated-communications.gif
-import titleImage from '/src/assets/Images/pr-integrated-communications.gif'
+
 
 function Home() {
   const[isLoggedIn,setIsLoggedIn] = useState(false)
@@ -20,13 +19,11 @@ function Home() {
     }
     else{
       setIsLoggedIn(false)
-    }
-    
+    }  
   },[])
 
 const navigate = useNavigate();
 const [allProjects,setAllProjects] = useState([])
-
 
 const getHomeProjects=async()=>{
   //api call
@@ -39,9 +36,7 @@ const getHomeProjects=async()=>{
     }
     else{
       console.log(result);
-    }
-    
-  
+    } 
 }
 
   const handleProjectsPage = ()=>{
@@ -72,21 +67,18 @@ const getHomeProjects=async()=>{
 }
             </Col>
             <Col sm={12} md={6} style={{paddingLeft:"40px"}}>
-                <img src={titleImage} style={{marginTop:"80px",borderRadius:"20px"}} width={"400px"} alt="" />
+                <img src={mainImage} style={{marginTop:"80px",borderRadius:"20px"}} width={"400px"} alt="Project Fair image" />
             
             </Col>
         </Row>
       </div>
 
-
 {/* allProjects */}
-
 
       <div className="allProject mt-5">
         <h1 className='text-center text-primary fw-bolder'>Explore Your Projects</h1>
 
         <marquee scrollAmount={25}>
-
           <Row>
         {
           allProjects.length>0?allProjects.map(project=>(

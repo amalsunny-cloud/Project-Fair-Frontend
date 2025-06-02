@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Card, Col, Modal, Row } from 'react-bootstrap'
-import prjctCard from '../assets/images/people-working-in-office.png'
+import prjctCard from '../assets/people-working-in-office.png'
 import { server_url } from '../Services/serverurl';
 
 function ProjectCard({project}) {
