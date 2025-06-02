@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
-import titleImage from '../assets/images/pr-integrated-communications.gif'
+// import titleImage from '../assets/images/pr-integrated-communications.gif'
 import ProjectCard from '../Components/ProjectCard'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { getHomeProjectAPI } from '../Services/allAPI'
-
-
+// project-fair\src\assets\Images\pr-integrated-communications.gif
+import titleImage from '/src/assets/Images/pr-integrated-communications.gif'
 
 function Home() {
   const[isLoggedIn,setIsLoggedIn] = useState(false)
