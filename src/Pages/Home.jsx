@@ -6,7 +6,7 @@ import ProjectCard from '../Components/ProjectCard'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { getHomeProjectAPI } from '../Services/allAPI'
-
+import '../../src/App.css'
 
 function Home() {
   const[isLoggedIn,setIsLoggedIn] = useState(false)
@@ -82,7 +82,8 @@ const getHomeProjects=async()=>{
           <Row>
         {
           allProjects.length>0?allProjects.map(project=>(
-            <Col sm={12} md={6} lg={4}>
+            <Col sm={12} md={6} lg={4} style={{cursor:"pointer"}}>
+              
                 <ProjectCard project={project}/>
             </Col>
         )):null
@@ -93,7 +94,7 @@ const getHomeProjects=async()=>{
 
 
       <div className="text-center">
-        <p className='btn fw-bold' style={{textDecoration:"underline",marginTop:"25px"}} onClick={handleProjectsPage}>View more projects</p>
+        <p className='view-button' style={{marginTop:"25px"}} onClick={handleProjectsPage}>View more projects</p>
       </div>
 
       <ToastContainer theme="colored" autoClose={2000} position="top-center"/>

@@ -1,0 +1,25 @@
+.view-button {
+  text-decoration: none;
+  position: relative;
+}
+
+.view-button::after {
+  content: "";
+  position: absolute;
+  left: 45%;
+  bottom: -4px;
+  width: 10%;
+  height: 2px; 
+  background-color: currentColor; 
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out 0.1s;
+  
+}
+
+.view-button:hover::after {
+  transform: scaleX(1); 
+}
+.view-button:hover{
+    font-weight: 600;
+    cursor: pointer;
+}

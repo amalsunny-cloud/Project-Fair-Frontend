@@ -14,10 +14,10 @@ function ProjectCard({project}) {
 
   return (
     <>
-       <Card style={{ width: '18rem' }} className='mt-5'>
+       <Card style={{ width: '18rem' }} className='mt-5 border border-4'>
       <Card.Img variant="top" src={prjctCard} width={"100%"} onClick={handleShow} />
       <Card.Body>
-        <Card.Title style={{color:"	rgb(255, 158, 2)"}}>{project?.title}</Card.Title>
+        <Card.Title style={{color:"	rgb(255, 158, 2)",textAlign:"center"}}>{project?.title}</Card.Title>
       </Card.Body>
     </Card>
 
